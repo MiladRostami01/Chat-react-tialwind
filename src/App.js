@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import react from 'react'
+import Layout from "./layout/Layout";
+import {Routes,Route} from "react-router-dom"
+
+import TitleProvider from "./provider/title-provider";
+import LayoutModeProvider from './provider/layoutMode-provider';
+
+import Groups from "./pages/Groups";
+import Chat from './pages/Chat'
+import Save from './pages/Save'
+import Setting from "./pages/Setting";
+
+
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <LayoutModeProvider>
+      <TitleProvider>
+        <Layout>
+          <Routes>
+            <Route path="/" element={<Groups/>} />
+            <Route path="/chat" element={<Chat />} />
+            <Route path="/save" element={<Save />} />
+            <Route path="/setting" element={<Setting />} />
+          </Routes>
+        </Layout>
+      </TitleProvider>
+    </LayoutModeProvider>
   );
 }
 

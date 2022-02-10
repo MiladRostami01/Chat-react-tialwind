@@ -1,0 +1,20 @@
+.navbar{
+  @apply bg-extraDark lg:rounded-[20px] lg:w-24 lg:h-[590px] flex items-center justify-center lg:static
+  w-28 h-[100vh] fixed left-[-100%] top-0 transition-all duration-1000 ease-out
+  z-20;
+}
+
+.navbar-active{
+  @apply left-0 ;
+}
+
+.navbar-ul{
+  @apply w-14 h-[280px] flex flex-col items-center justify-between transition-all duration-1000 ease-linear ;
+}
+
+.icon-size{
+  @apply w-[58px] h-[58px] flex justify-center items-center rounded-lg;
+}
+.icon-size-hover{
+  @apply bg-veryDark ;
+}

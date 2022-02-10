@@ -1,0 +1,9 @@
+.app-container{
+  @apply lg:min-w-[975px] min-w-[100vw] md:min-h-[660px] min-h-[100vh] h-auto bg-littleDark md:rounded-2xl md:p-[35px] 
+  sm:p-[20px] p-[10px] flex items-center relative z-0;
+}
+
+.overlay {
+  @apply fixed w-full h-full top-0 bottom-0 left-0 right-0 bg-slate-900 opacity-70 
+  z-10 lg:bg-transparent lg:opacity-0 lg:w-0 lg:h-0 ;
+}   
