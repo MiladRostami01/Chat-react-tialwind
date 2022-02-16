@@ -1,15 +1,15 @@
-import React from "react";
-import Card from "../components/hoc/Card/Card";
-import { useLayoutMode } from "../provider/layoutMode-provider";
+import React from "react"
+import Card from "../components/hoc/Card/Card"
+import { useLayoutMode } from "../provider/layoutMode-provider"
 
 // import './Groups.css'
 
-import cuisine from "./../assets/img/cuisine.svg";
-import art from "./../assets/img/art.svg";
-import workout from "./../assets/img/workout.svg";
-import gaming from "./../assets/img/gaming.svg";
-import hiking from "./../assets/img/hiking.svg";
-import yoga from "./../assets/img/yoga.svg";
+import cuisine from "./../assets/img/cuisine.svg"
+import art from "./../assets/img/art.svg"
+import workout from "./../assets/img/workout.svg"
+import gaming from "./../assets/img/gaming.svg"
+import hiking from "./../assets/img/hiking.svg"
+import yoga from "./../assets/img/yoga.svg"
 
 const GroupsData = [
   {
@@ -84,12 +84,12 @@ const GroupsData = [
     image: yoga,
     id: 12
   }
-];
+]
 
 function Groups() {
-  const layoutMode = useLayoutMode();
+  const layoutMode = useLayoutMode()
 
-  const layoutStyle = layoutMode === "grid" ? "md:grid-cols-4 " : "md:grid-cols-2";
+  const layoutStyle = layoutMode === "grid" ? "md:grid-cols-4 " : "md:grid-cols-2"
 
   return (
     <div
@@ -139,10 +139,10 @@ function Groups() {
               </div>
             </div>
           </Card>
-        );
+        )
       })}
     </div>
-  );
+  )
 }
 
-export default Groups;
+export default Groups
