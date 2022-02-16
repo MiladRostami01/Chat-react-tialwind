@@ -2,6 +2,6 @@ cusotm::-webkit-scrollbar {
   width: 2vw;
 }
 
-.cards{
-  @apply w-full grid gap-4 row-auto overflow-y-auto sm:grid-cols-2 grid-cols-1 h-[436px] ;
+.cards {
+  @apply w-full grid gap-4 row-auto overflow-y-auto sm: grid-cols-2 grid-cols-1 h-[436px];
 }

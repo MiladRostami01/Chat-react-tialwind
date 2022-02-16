@@ -2,17 +2,18 @@
   @apply flex flex-row items-center justify-between w-full lg:h-[60px] lg:mb-[35px] lg:my-[0px] my-[35px];
 }
 
-.layout-icon{
-  @apply w-[52px] h-[52px] p-[10px] flex justify-center items-center overflow-hidden cursor-pointer
-   select-none;
+.layout-icon {
+  @apply w-[52px] h-[52px] p-[10px] flex justify-center items-center overflow-hidden cursor-pointer select-none;
 }
-.layout-icon-active{
+
+.layout-icon-active {
   @apply bg-extraDark select-none;
 }
-.layout-icon-hover{
+
+.layout-icon-hover {
   @apply hover:bg-veryDark;
 }
 
-.hamburger-menu{
+.hamburger-menu {
   @apply cursor-pointer transition-colors duration-300 w-[45px] h-[45px] flex justify-center items-center rounded-lg border-[3px] p-[5px] border-extraDark lg:hidden;
 }

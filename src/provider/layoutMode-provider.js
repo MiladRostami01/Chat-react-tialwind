@@ -1,10 +1,10 @@
-import react, {useState, createContext, useContext} from 'react'
+import react, { useState, createContext, useContext } from "react"
 
 const layoutModeContext = createContext()
 const setlayoutModeContext = createContext()
 
-function LayoutModeProvider ({children}) {
-  const [layoutMode, setLayoutMode] = useState('grid')
+function LayoutModeProvider({ children }) {
+  const [layoutMode, setLayoutMode] = useState("grid")
 
   return (
     <layoutModeContext.Provider value={layoutMode}>
@@ -15,14 +15,13 @@ function LayoutModeProvider ({children}) {
   )
 }
 
-function useLayoutMode () {
+function useLayoutMode() {
   return useContext(layoutModeContext)
 }
 
-function useSetLayoutMode () {
+function useSetLayoutMode() {
   return useContext(setlayoutModeContext)
 }
 
-export {useLayoutMode, useSetLayoutMode}
+export { useLayoutMode, useSetLayoutMode }
 export default LayoutModeProvider
-
