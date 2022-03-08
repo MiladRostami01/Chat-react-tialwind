@@ -26,7 +26,7 @@ function ChatList() {
           />
         </div>
         <div>
-          <h2 className="text-textColor font-bold text-sm ml-2">Scott Wong</h2>
+          <h2 className="text-textColor font-bold text-sm ml-2">Sscott Wong</h2>
           <p className="text-textColor text-sm ml-2">12:05 p.m</p>
         </div>
       </ChatCard>
