@@ -1,7 +1,5 @@
-import React from "react";
-import ChatCard from "../hoc/ChatCard/ChatCard";
-
-import yoga from "./../../assets/img/yoga.svg";
+import React from "react"
+import ChatCard from "../hoc/ChatCard/ChatCard"
 
 function ChatMessage() {
   return (
@@ -19,7 +17,11 @@ function ChatMessage() {
       {/* input end */}
       <ChatCard>
         <div className="w-[50px] h-[50px]">
-          <img src={yoga} className="w-full h-full" alt="" />
+          <img
+            src="https://s6.uupload.ir/files/yoga_xrpy.png"
+            className="w-full h-full"
+            alt=""
+          />
         </div>
         <div>
           <h2 className="text-textColor font-bold text-sm ml-2">Nancy Fernandez</h2>
@@ -40,7 +42,7 @@ function ChatMessage() {
         </p>
       </div>
     </div>
-  );
+  )
 }
 
-export default ChatMessage;
+export default ChatMessage

@@ -1,90 +1,9 @@
 import React from "react"
 import Card from "../components/hoc/Card/Card"
 import { useLayoutMode } from "../provider/layoutMode-provider"
+import * as data from "../data/data"
 
 // import './Groups.css'
-
-import cuisine from "./../assets/img/cuisine.svg"
-import art from "./../assets/img/art.svg"
-import workout from "./../assets/img/workout.svg"
-import gaming from "./../assets/img/gaming.svg"
-import hiking from "./../assets/img/hiking.svg"
-import yoga from "./../assets/img/yoga.svg"
-
-const GroupsData = [
-  {
-    title: "Cuisine",
-    members: 36,
-    image: cuisine,
-    id: 1
-  },
-  {
-    title: "Art",
-    members: 9,
-    image: art,
-    id: 2
-  },
-  {
-    title: "workout",
-    members: 27,
-    image: workout,
-    id: 3
-  },
-  {
-    title: "Gaming",
-    members: 105,
-    image: gaming,
-    id: 4
-  },
-  {
-    title: "Hiking",
-    members: 97,
-    image: hiking,
-    id: 5
-  },
-  {
-    title: "Yoga",
-    members: 65,
-    image: yoga,
-    id: 6
-  },
-  {
-    title: "Cuisine",
-    members: 36,
-    image: cuisine,
-    id: 7
-  },
-  {
-    title: "Art",
-    members: 9,
-    image: art,
-    id: 8
-  },
-  {
-    title: "workout",
-    members: 27,
-    image: workout,
-    id: 9
-  },
-  {
-    title: "Gaming",
-    members: 105,
-    image: gaming,
-    id: 10
-  },
-  {
-    title: "Hiking",
-    members: 97,
-    image: hiking,
-    id: 11
-  },
-  {
-    title: "Yoga",
-    members: 65,
-    image: yoga,
-    id: 12
-  }
-]
 
 function Groups() {
   const layoutMode = useLayoutMode()
@@ -124,7 +43,7 @@ function Groups() {
           Create Group
         </div>
       </Card>
-      {GroupsData.map(group => {
+      {data.GroupsData.map(group => {
         return (
           <Card key={group.id}>
             <div>
